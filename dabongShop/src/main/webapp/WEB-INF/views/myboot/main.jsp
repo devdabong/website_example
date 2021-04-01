@@ -154,9 +154,9 @@ img {
 		
 		
 		<!-- <div class="container" style="margin-top: 30px; margin-bottom: 30px;">  -->
-		<div id="cont" class="container">   
-			<div class="info ">
-				<div class="row">    
+		<div id="cont" class="container-fluid">   
+			<div class="info container"> 
+				<div class="row">     
 					<c:url value='/resources/images/prague1.jpg' var="place1" />
 					<c:url value='/resources/images/prague2.jpg' var="place2" />
 					<p class="display-3 col-md-12 text-center py-4">ABOUT</p>
@@ -165,7 +165,7 @@ img {
 					<p class="col-md-3 mb-5 text-center"><a href="#" class="btn" style="vertical-align:middle;">자세히 보기</a></p>       
 				</div>     
 			</div>   
-			<div class="pic mb-5">     
+			<div class="pic mb-5 container">      
 				<div class="row">      
 					<div class="col-md-6">                 
 						<img src="${place1 }" class="d-block w-100 bd-placeholder-img" alt="..."> 
@@ -204,7 +204,7 @@ img {
 					</div> 
 				</div>
 			</div>  --%>
-			<div class="info">
+			<div class="info container">
 				<div class="row">    
 					<c:url value='/resources/images/prague1.jpg' var="place1" />
 					<c:url value='/resources/images/prague2.jpg' var="place2" />
@@ -214,7 +214,7 @@ img {
 					<p class="col-md-3 mb-5 text-center"><a href="#" class="btn" style="vertical-align:middle;">자세히 보기</a></p>       
 				</div>     
 			</div>
-			<div class="food mb-5"> 
+			<div class="food mb-5 container"> 
 				<div class="row"> 
 					<div class="col-md-4" style="padding: 0">
 						<img src="${url1 }" class="d-block w-100 bd-placeholder-img" alt="...">
@@ -227,41 +227,47 @@ img {
 					</div> 
 				</div>
 			</div>
+			
+			<div class="info container">
+				<div class="row">      
+					<c:url value='/resources/images/prague1.jpg' var="place1" />
+					<c:url value='/resources/images/prague2.jpg' var="place2" />
+					<p class="display-3 col-md-12 text-center py-4 mt-5">Location</p>
+				</div>      
+			</div> 
 		</div>
-		
-		<div class="info">
-			<div class="row">     
-				<c:url value='/resources/images/prague1.jpg' var="place1" />
-				<c:url value='/resources/images/prague2.jpg' var="place2" />
-				<p class="display-3 col-md-12 text-center py-4 mt-5">Location</p>
-				<div class="col-md-12" style="padding: 0"> 
-					<div id="map" class="col-md-12"></div>   
-					<!-- <div id="map" style="width:500px;height:400px;"></div> -->
-				</div>        
-			</div>      
-		</div> 
-	</div>
+	</div>  
 	
-	
+	<div class="col-md-12 mt-4" style="padding: 0"> 
+		<div id="map" class="col-md-12"></div>    
+		<!-- <div id="map" style="width:500px;height:400px;"></div> -->
+	</div>   
 	 
-	<!-- Footer -->
+	<!-- Footer --> 
 	<div class="footer" style="margin-bottom: 0;">
 		<footer class=""> 
 		<div class="link">
 			 
 		</div>
-		<div class="py-4 text-center border-top" style="background-color: #495057;">
-			<div class="row m-0 text-muted text-left" >  
-				<div class="col-md-3">다봉 식당</div>  
-				<div class="col-md-3">경기도 김포시 구래동 1</div>  
-			</div>    
-			<div class="row m-0 text-muted text-left" >  
-				<div class="col-md-3">대표번호: 031-123-1234</div>  
-				<div class="col-md-3">사업자등록번호:123-12-12312</div>
-			</div> 
-			<div class="row m-0 text-muted text-left" >   
-				<div class="col-md-3">대표쟈: 정다봉</div>     
-			</div>          
+		<div class="py-4 container-fluid text-center border-top" style="background-color: #495057; margin: 0;">
+			<div class="row">      
+				<div class="col-md-2">로고</div>   
+				<div class="col-md-10">   
+					<div class="row m-0 text-muted text-left" >  
+						<div class="col-md-4">다봉 식당</div>  
+						<div class="col-md-auto">경기도 김포시 구래동 1</div>  
+					</div>    
+					<div class="row m-0 text-muted text-left" >  
+						<div class="col-md-4">대표번호: 031-123-1234</div>  
+						<div class="col-md-auto">사업자등록번호:123-12-12312</div>
+					</div> 
+					<div class="row m-0 text-muted text-left" >   
+						<div class="col-md-4">대표쟈: 정다봉</div>     
+					</div>
+				</div>   
+			</div>
+		
+			          
 		</div>     
 	    <div class="bg-dark">     
 	      <p class="m-0 text-center text-secondary">Copyright &copy; Dabong Shop 2020</p>
