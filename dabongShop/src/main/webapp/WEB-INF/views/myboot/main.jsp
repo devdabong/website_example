@@ -61,6 +61,11 @@ img {
 #map {
 	height: 500px;
 } 
+
+.time_ul {
+	list-style: none;
+	padding-left: 0px;
+}
 /* .carousel-item > img { 
 	height: 500px; 
 }   
@@ -245,10 +250,44 @@ img {
 	 
 	<!-- Footer --> 
 	<div class="footer container-fluid" style="margin-bottom: 0; padding: 0;">
+		<footer class="">    
+			<div class="py-4 container border-top">	 
+				  <div class="row">    
+				    <%-- <div class="col-12 col-md-1">
+				      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
+				    </div> --%> 
+				    <div class="col-6 col-md-4"> 
+				      <h6>전화번호</h6>    
+				      <ul class="list-unstyled text-small">
+				        <li><h6 class="text-muted">031-123-1234</h5></li>
+				      </ul>    
+				      <h6>영업시간</h6>   
+				      <ul class="time_ul">
+				      	<li><h6 class="text-muted">MON-FRI  am 09:00 ~ pm 06:00</h6></li>
+				      	<li><h6 class="text-muted">LUNCH  pm 12:00 ~ pm 01:00</h6></li>
+				      	<li><h6 class="text-muted">Sat, Sun, Holiday OFF</h6></li>
+				      </ul> 
+				    </div>  
+				    <div class="col-6 col-md-4">
+				      <h6>계좌</h6> 
+				      <ul class="list-unstyled text-small">
+				        <li><a class="text-muted">신한은행</a></li>
+				        <li><a class="text-muted">123-123-12-1231</a></li>
+				        <li><a class="text-muted">정다봉</a></li>
+				      </ul>
+				    </div>   
+				    <div class="col-6 col-md-3">
+				      <c:url value='/resources/images/facebook.png' var="sns1" />
+				      <c:url value='/resources/images/instar.png' var="sns2" />
+				      <h6>&nbsp;SNS</h6>  
+				      <ul class="list-unstyled text-small" style="display: block;">  
+				        <li><a class="text-muted" href="#"><img src="${sns1 }" class="d-block" style="width: 30px; height: 25px; float: left; padding-right: 6px;" alt="..."></a></li>
+				        <li><a class="text-muted" href="#"><img src="${sns2 }" class="d-block" style="width: 25px; height: 25px;" alt="..."></a></li>
+				      </ul>      
+				    </div> 
+				</div>         
+		</footer> 
 		<footer class="" style="background-color: #495057;">  
-			<div class="link">    
-				  
-			</div>    
 			<div class="py-4 container text-center border-top ml-4" style="background-color: #495057;">
 				<div class="row">               
 					<div class="col-12 col-md-1 ml-3">
@@ -269,58 +308,11 @@ img {
 					</div>    
 				</div>
 			</div>  
-			
-		    <div class="bg-dark">     
-		      <p class="m-0 text-center text-secondary">Copyright &copy; Dabong Shop 2020</p>
-		    </div>
-		    <!-- /.container -->
-	    </footer> 
-		<footer class="container py-5">
-		  <div class="row">
-		    <div class="col-12 col-md">
-		      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
-		    </div>
-		    <div class="col-6 col-md">
-		      <h5>Features</h5>
-		      <ul class="list-unstyled text-small">
-		        <li><a class="text-muted" href="#">Cool stuff</a></li>
-		        <li><a class="text-muted" href="#">Random feature</a></li>
-		        <li><a class="text-muted" href="#">Team feature</a></li>
-		        <li><a class="text-muted" href="#">Stuff for developers</a></li>
-		        <li><a class="text-muted" href="#">Another one</a></li>
-		        <li><a class="text-muted" href="#">Last time</a></li>
-		      </ul>
-		    </div>
-		    <div class="col-6 col-md">
-		      <h5>Resources</h5>
-		      <ul class="list-unstyled text-small">
-		        <li><a class="text-muted" href="#">Resource</a></li>
-		        <li><a class="text-muted" href="#">Resource name</a></li>
-		        <li><a class="text-muted" href="#">Another resource</a></li>
-		        <li><a class="text-muted" href="#">Final resource</a></li>
-		      </ul>
-		    </div>
-		    <div class="col-6 col-md">
-		      <h5>Resources</h5>
-		      <ul class="list-unstyled text-small">
-		        <li><a class="text-muted" href="#">Business</a></li>
-		        <li><a class="text-muted" href="#">Education</a></li>
-		        <li><a class="text-muted" href="#">Government</a></li>
-		        <li><a class="text-muted" href="#">Gaming</a></li>
-		      </ul>
-		    </div>
-		    <div class="col-6 col-md">
-		      <h5>About</h5>
-		      <ul class="list-unstyled text-small">
-		        <li><a class="text-muted" href="#">Team</a></li>
-		        <li><a class="text-muted" href="#">Locations</a></li>
-		        <li><a class="text-muted" href="#">Privacy</a></li>
-		        <li><a class="text-muted" href="#">Terms</a></li>
-		      </ul>
-		    </div>
-		  </div>
-		</footer>
+	    </footer>  
 	</div>
+	<div class="bg-dark">     
+    	<p class="m-0 text-center text-secondary">Copyright &copy; Dabong Shop 2020</p>
+    </div> 
 </body>
 <script type="text/javascript">
 var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
