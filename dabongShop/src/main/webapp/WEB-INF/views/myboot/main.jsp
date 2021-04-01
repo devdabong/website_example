@@ -17,6 +17,8 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Noto+Serif+KR&family=Poor+Story&family=Stylish&family=Yeon+Sung&display=swap" rel="stylesheet">
+
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0e7b2a5c2598977f8bb8f6b360def401"></script>
 <title>Insert title here</title> 
 <style type="text/css">
 
@@ -232,22 +234,23 @@ img {
 				<c:url value='/resources/images/prague1.jpg' var="place1" />
 				<c:url value='/resources/images/prague2.jpg' var="place2" />
 				<p class="display-3 col-md-12 text-center py-4 mt-5">Location</p>
-				<div class="col-md-12 mb-3" style="padding: 0">
-					<div id="map" class="col-md-12 bg-success">지도</div> 
+				<div class="col-md-12" style="padding: 0"> 
+					<div id="map" class="col-md-12"></div>   
+					<!-- <div id="map" style="width:500px;height:400px;"></div> -->
 				</div>        
 			</div>      
 		</div> 
 	</div>
 	
 	
-	
+	 
 	<!-- Footer -->
 	<div class="footer" style="margin-bottom: 0;">
 		<footer class=""> 
 		<div class="link">
-			
+			 
 		</div>
-		<div class="mt-5 py-4 text-center border-top" style="background-color: #495057;">
+		<div class="py-4 text-center border-top" style="background-color: #495057;">
 			<div class="row m-0 text-muted text-left" >  
 				<div class="col-md-3">다봉 식당</div>  
 				<div class="col-md-3">경기도 김포시 구래동 1</div>  
@@ -268,4 +271,28 @@ img {
 
 	</div>
 </body>
+<script type="text/javascript">
+var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+var options = { //지도를 생성할 때 필요한 기본 옵션
+	center: new kakao.maps.LatLng(37.64525277709508, 126.62840281425957), //지도의 중심좌표.
+	level: 3 //지도의 레벨(확대, 축소 정도)
+};
+
+var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+
+//마커가 표시될 위치입니다 
+var markerPosition  = new kakao.maps.LatLng(37.64525277709508, 126.62840281425957); 
+
+//마커를 생성합니다 
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+}); 
+  
+marker.setMap(map); 
+
+//카카오 지도 api 관련 사이트
+//https://apis.map.kakao.com/web/guide/
+//https://apis.map.kakao.com/web/sample/basicMarker/
+
+</script>
 </html>
