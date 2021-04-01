@@ -5,7 +5,7 @@
 <html> 
 <head>
 <meta charset="UTF-8">
-<!-- bootstrap4 -->
+<!-- bootstrap4
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -18,9 +18,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Noto+Serif+KR&family=Poor+Story&family=Stylish&family=Yeon+Sung&display=swap" rel="stylesheet">
 
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0e7b2a5c2598977f8bb8f6b360def401"></script>
-<title>Insert title here</title> 
-<style type="text/css">
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0e7b2a5c2598977f8bb8f6b360def401"></script> -->
+<jsp:include page="common.jsp"></jsp:include>
+<title>다봉 식당</title> 
+<style type="text/css">  
 
 body {
 	font-family: 'Noto Serif KR';
@@ -101,11 +102,11 @@ img {
 		</button>
 		<div class="collapse navbar-collapse" id="collapsibleNavbar">  
 			<ul class="navbar-nav mr-auto">  
-				<li class="nav-item"><a class="nav-link" href="#">메인</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">소개</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">메뉴</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">오시는길</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">예약안내</a></li> 
+				<li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/my">메인</a></li> 
+				<li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/my/info">소개</a></li> 
+				<li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/my/menu">메뉴</a></li> 
+				<li class="nav-item"><a class="nav-link" href="#">오시는길</a></li>  
+				<li class="nav-item"><a class="nav-link" href="#">예약안내</a></li>  
 			</ul>  
 			<!-- <span class="navbar-text">
 		      <a class="nav-item"><a class="nav-link" href="#">로그인</a></a>  
